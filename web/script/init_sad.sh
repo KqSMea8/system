@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+#!/usr/bin/env bash
+#!/usr/bin/env bash
 cd ../src/main/ \
     && git clone git@git.souche.com:souche-f2e/sad-template.git \
     && mv sad-template antd \
