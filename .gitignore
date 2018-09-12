@@ -1,0 +1,17 @@
+dist
+node_modules
+.DS_Store
+
+target/
+.idea/
+*.iml
+.project
+.settings
+.classpath
+catalina.base_IS_UNDEFINED/
+bin/
+rebel.xml
+.springBeans
+*.log
+web/src/main/webapp/WEB-INF/velocity/system/version.vm
+
