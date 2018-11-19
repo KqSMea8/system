@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 用户自定义的拦截器配置 -->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans"
+    xmlns:p="http://www.springframework.org/schema/p" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+    default-autowire="byName" default-lazy-init="true">
+
+    <!--<bean id="interceptorList" class="com.souche.optimus.core.interceptor.InterceptorList"-->
+          <!--autowire="byName">-->
+        <!--<property name="interceptors">-->
+            <!--<list>-->
+                <!--<ref bean="loginInterceptorWrapper"/>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--<bean id="loginInterceptorWrapper" class="com.souche.optimus.core.interceptor.InterceptorWrapper"-->
+          <!--autowire="byName">-->
+        <!--<property name="includePattern" value="/**"/>        &lt;!&ndash; 被登录保护的 URL Pattern &ndash;&gt;-->
+        <!--<property name="inteceptor" ref="loginInterceptor"/> &lt;!&ndash; 拦截器BEAN的ID &ndash;&gt;-->
+        <!--<property name="excludePatternList">-->
+            <!--<list>-->
+                <!--<value>/notify/*</value>-->
+                <!--<value>/callback/*</value>-->
+                <!--<value>/exportExcel/**</value>-->
+                <!--<value>/system/version.htm</value>-->
+                <!--<value>/system/config/*</value>-->
+                <!--<value>/sso/*</value>  &lt;!&ndash; 在/**的拦截器下, 该地址请放过, 不然无法登陆 &ndash;&gt;-->
+                <!--<value>/shop/**</value> &lt;!&ndash; 内网都在这个路径下, 这里忽略不拦截, 交由内网拦截器拦截 &ndash;&gt;-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--<bean id="loginInterceptor" class="com.souche.sso.client2.OptimusLoginInterceptor">-->
+        <!--<property name="env" value="${sso.env}"/>                         &lt;!&ndash; 缓存服务BEAN的ID &ndash;&gt;-->
+        <!--<property name="ssoExpire" value="${sso.expire}"/>                &lt;!&ndash; 客户端失效时间,单位秒 &ndash;&gt;-->
+        <!--<property name="enabled" value="${sso.enable}"/>                  &lt;!&ndash; 开关 &ndash;&gt;-->
+    <!--</bean>-->
+</beans>
